@@ -1,104 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time Table</title>
-    <style>
-        tr{
-            border: 5px black solid;
-        }
-        table{
-            border: 5px black solid;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Table</title>
+  <style>
+    table {
+      border-collapse: collapse; 
+      width: 100%;
+      text-align: center;
+    }
+    table, th, td {
+      border: 2px solid black;
+    }
+    th, td {
+      padding: 10px;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .lunch {
+      font-weight: bold;
+      background-color: #ffe5b4;
+    }
+  </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <td rowspan="2">Day/Time</td>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-            <td>4</td>
-            <td rowspan="5"></td>
-            <td></td>
-            <td>5</td>
-            <td>6</td>
-            <td>7</td>
-            <td>8</td>
-        </tr>
-        <tr>
-            <td>8:50-9:40</td>
-            <td>9:40-10:30</td>
-            <td>10:30-11:30</td>
-            <td>11:30-12:20</td>
-            <td>12:20-1:10</td>
-            <td>1:10-2</td>
-            <td>2-2:50</td>
-            <td>2:50-3:40</td>
-            <td>3:40-4:30</td>
-        </tr>
-        <tr>
-            <td>Monday</td>
-            <td>sub1</td>
-            <td>sub2</td>
-            <td>sub3</td>
-            <td>sub4</td>
-            <td>Lunch</td>
-            <td>sub5</td>
-            <td>sub6</td>
-            <td>sub7</td>
-            <td>sub8</td>
-        </tr>
-        <tr>
-            <td>Tuesday</td>
-            <td>sub1</td>
-            <td>sub2</td>
-            <td>sub3</td>
-            <td>sub4</td>
-            <td>Lunch</td>
-            <td>sub5</td>
-            <td>sub6</td>
-            <td>sub7</td>
-            <td>sub8</td>
-        </tr>
-        <tr>
-            <td>Wednesday</td>
-            <td>sub1</td>
-            <td>sub2</td>
-            <td>sub3</td>
-            <td>sub4</td>
-            <td>Lunch</td>
-            <td>sub5</td>
-            <td>sub6</td>
-            <td>sub7</td>
-            <td>sub8</td>
-        </tr>
-        <tr>
-            <td>Thursday</td>
-            <td>sub1</td>
-            <td>sub2</td>
-            <td>sub3</td>
-            <td>sub4</td>
-            <td>Lunch</td>
-            <td>sub5</td>
-            <td>sub6</td>
-            <td>sub7</td>
-            <td>sub8</td>
-        </tr>
-        <tr>
-            <td>friday</td>
-            <td>sub1</td>
-            <td>sub2</td>
-            <td>sub3</td>
-            <td>sub4</td>
-            <td>Lunch</td>
-            <td>sub5</td>
-            <td>sub6</td>
-            <td>sub7</td>
-            <td>sub8</td>
-        </tr>
-    </table>
+  <h2 style="text-align:center;">Weekly Time Table</h2>
+  
+  <table>
+    <tr>
+      <th rowspan="2">Day/Time</th>
+      <th>1</th>
+      <th>2</th>
+      <th>3</th>
+      <th>4</th>
+      <th rowspan="7" class="lunch">LUNCH</th> 
+      <th>5</th>
+      <th>6</th>
+      <th>7</th>
+      <th>8</th>
+    </tr>
+    <tr>
+      <td>8:50-9:40</td>
+      <td>9:40-10:30</td>
+      <td>10:30-11:30</td>
+      <td>11:30-12:20</td>
+      <td>1:10-2:00</td>
+      <td>2:00-2:50</td>
+      <td>2:50-3:40</td>
+      <td>3:40-4:30</td>
+    </tr>
+    
+    <tr>
+      <th>Monday</th>
+      <td>Sub1</td>
+      <td>Sub2</td>
+      <td>Sub3</td>
+      <td>Sub4</td>
+      <td>Sub5</td>
+      <td>Sub6</td>
+      <td>Sub7</td>
+      <td>Sub8</td>
+    </tr>
+    <tr>
+      <th>Tuesday</th>
+      <td>Sub1</td>
+      <td>Sub2</td>
+      <td>Sub3</td>
+      <td>Sub4</td>
+      <td>Sub5</td>
+      <td>Sub6</td>
+      <td>Sub7</td>
+      <td>Sub8</td>
+    </tr>
+    <tr>
+      <th>Wednesday</th>
+      <td>Sub1</td>
+      <td>Sub2</td>
+      <td>Sub3</td>
+      <td>Sub4</td>
+      <td>Sub5</td>
+      <td>Sub6</td>
+      <td>Sub7</td>
+      <td>Sub8</td>
+    </tr>
+    <tr>
+      <th>Thursday</th>
+      <td>Sub1</td>
+      <td>Sub2</td>
+      <td>Sub3</td>
+      <td>Sub4</td>
+      <td>Sub5</td>
+      <td>Sub6</td>
+      <td>Sub7</td>
+      <td>Sub8</td>
+    </tr>
+    <tr>
+      <th>Friday</th>
+      <td>Sub1</td>
+      <td>Sub2</td>
+      <td>Sub3</td>
+      <td>Sub4</td>
+      <td>Sub5</td>
+      <td>Sub6</td>
+      <td>Sub7</td>
+      <td>Sub8</td>
+    </tr>
+  </table>
 </body>
 </html>
